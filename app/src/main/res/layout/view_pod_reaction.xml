@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padcmyanmar.padcx.padc_x_recyclerview_ypst.veiws.viewpods.ReactionViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvLikedUser"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="36"
+        android:drawableStart="@drawable/ic_thumb_up_black_24dp"
+        android:gravity="center"
+        android:drawablePadding="@dimen/margin_medium"
+        android:drawableTint="@color/colorAccent"
+        />
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvSharedUser"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="36"
+        android:layout_alignParentRight="true"
+        android:drawableStart="@drawable/ic_share_black_24dp"
+        android:gravity="center"
+        android:drawableTint="@color/colorAccent"
+        android:drawablePadding="@dimen/margin_medium"/>
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvCommentedUser"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="36"
+        android:layout_toStartOf="@id/tvSharedUser"
+        android:drawableTint="@color/colorAccent"
+        android:drawableStart="@drawable/ic_insert_comment_black_24dp"
+        android:gravity="center"
+        android:drawablePadding="@dimen/margin_medium"/>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tvSharedUser"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:background="@color/design_default_color_primary_dark"/>
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/viewLine"
+    android:weightSum="3">
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        android:drawableStart="@drawable/ic_thumb_up_black_24dp"
+        android:drawablePadding="@dimen/margin_medium"
+        android:layout_weight="1"
+        />
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/ic_insert_comment_black_24dp"
+        android:gravity="center"
+        android:drawablePadding="@dimen/margin_medium"/>
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/ic_share_black_24dp"
+        android:gravity="center"
+        android:drawablePadding="@dimen/margin_medium"/>
+</LinearLayout>
+
+</com.padcmyanmar.padcx.padc_x_recyclerview_ypst.veiws.viewpods.ReactionViewPod>
